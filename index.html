@@ -276,7 +276,7 @@
                     </address>
                 </div>
                 <div class="social-media">
-                    <h3>присоединяйтесь</h3>
+                    <h3 class="footer-header">присоединяйтесь</h3>
                     <ul class="media-list list">
                         <li class="media-item"><a class="media-link" href="">
                             <svg class="media-icon">
@@ -300,13 +300,39 @@
                         </a></li>
                     </ul>
                 </div>
+                <form class="form-subscription"> 
+                    <div class="form-field">
+                        <h3 class="footer-header">Подпишитесь на рассылку</h3>
+                        <label>
+                            <input class="input-email" type="email" name="name" placeholder="E-mail" autofocus>
+                        </label>
+                    </div>
+                    <button type="submit" class="button button-footer">Подписаться</button>
+                </form>
             </div>
         </footer>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="modal-button" type="button" data-modal-close><img src="./images/Vector-2-2.svg" alt="Close" width="11"></button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-button" type="button" data-modal-close><img src="./images/Vector-2-2.svg" alt="Close"
+                            width="11"></button>
+                            <form class="form-modal">
+                                <div class="modal-field">
+                                <h3 class="form-header">Оставьте свои данные, мы вам перезвоним</h3>
+                                <label for="name" class="form-label">Имя</label>
+                                <input type="text" class="form-input" name="name" id="name">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" class="form-input" name="tel" id="tel">
+                                <label for="mail" class="form-label">Почта</label>
+                                <input type="email" class="form-input" name="mail" id="mail">
+                                <label for="comment" class="form-label">Комментарий</label>
+                                <textarea name="comment" id="comment" class="form-input" placeholder="Введите текст"></textarea>
+                                <div class="policy"><input type="checkbox" name="policy" id="policy" class="form-check">
+                                <label for="policy" class="form-policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label></div>
+                                <button type="submit" class="button button-form">Отправить</button>
+                                </div>
+                            </form>
+                </div>
             </div>
-        </div>
-        <script src="./js/modal.js"></script>
+            <script src="./js/modal.js"></script>
 </body>
 </html>
