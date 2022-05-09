@@ -695,9 +695,6 @@ footer .container {
   letter-spacing: 0.01em;
 }
 
-.policy {
-  display: inline;
-}
 .button-form {
   display: block;
   margin: auto;
@@ -758,15 +755,20 @@ footer .container {
   -moz-appearance: none;
   appearance: none;
 }
+.form-policy {
+  display: flex;
+  align-items: center;
+}
 .checkbox-icon {
   display: inline-block;
   border: 2px solid #212121;
   width: 16px;
   height: 16px;
   border-radius: 2px;
+  margin-right: 9px;
 }
 .checkbox:checked + .checkbox-icon {
-  background-image: url('//images/icon-check.svg');
+  background-image: url('..//images/icon-check.svg');
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-size: contain;
