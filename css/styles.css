@@ -790,4 +790,7 @@ footer .container {
   width: 15px;
   height: 15px;
 }
-
+.license {
+  margin-left: 4px;
+  color: var(--accent-color);
+}
