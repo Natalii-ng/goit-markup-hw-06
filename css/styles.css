@@ -625,6 +625,15 @@ footer .container {
   background: var(--primary-white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover,
+.modal-button:focus {
+  border-color: var(--accent-color);
+}
+.modal-button:hover .close,
+.modal-button:focus .close {
+  fill: var(--accent-color);
 }
 .project-img {
   position: relative;
@@ -706,11 +715,10 @@ footer .container {
 .close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  width: 15px;
+  height: 15px;
 }
-.close:hover,
-.close:focus {
-  fill: var(--accent-color);
-}
+
 .button-footer {
   display: flex;
   align-items: center;
